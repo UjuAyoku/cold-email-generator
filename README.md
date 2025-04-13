@@ -33,3 +33,37 @@ This project leverages cutting-edge AI tools and modern software architecture to
 
 - **Output:** A ready-to-send, targeted cold email with supporting portfolio references.
 
+## How to Use the Cold Email Generator
+### :file_folder: Clone the Repository
+git clone https://github.com/UjuAyoku/cold-email-generator.git
+cd cold-email-generator/app
+
+### :file_cabinet: Create and Activate Virtual Environment (Optional but Recommended)
+python -m venv env
+source env/bin/activate      # On macOS/Linux
+env\Scripts\activate         # On Windows
+
+### :toolbox: Install Dependencies
+pip install -r requirements.txt
+
+### :key: Set Up .env File
+Create a .env file inside the app directory and add your credentials:
+GROQ_API_KEY=your_groq_api_key
+This is used to authenticate and access Groq’s Llama 3.3 model.
+
+### :link: Update the Job Posting URL
+Open main.py and update the placeholder URL to a valid job posting:
+url_input = "https://careers.example.com/job/software-engineer-ai"
+
+### :arrow_forward: Run the App
+From inside the app/ folder, launch the Streamlit app:
+streamlit run main.py
+
+Your app will open in your browser at http://localhost:8501.
+
+### :pushpin: Notes
+- The project relies on your curated project portfolio in app/resource/portfolio.csv. Ensure it's up-to-date.
+
+- Groq’s API is blazing fast for Llama 3.3—perfect for real-time cold email generation.
+
+- You can further extend this by integrating multiple job sources.
