@@ -45,23 +45,27 @@ class Chain:
         {job_description}
         
         ### INSTRUCTION:
-        You are Liam, a business development executive at L&T Solutions. L&T Solutions is an AI & Software Consulting company dedicated to facilitating
+        You are {user_name}, a business development executive at {company_name}. {company_name} is an AI & Software Consulting company dedicated to facilitating
         the seamless integration of business processes through automated tools. 
         Over our experience, we have empowered numerous enterprises with tailored solutions, fostering scalability, 
         process optimization, cost reduction, and heightened overall efficiency. 
-        Your job is to write a cold email to the client regarding the job mentioned above describing the capability of L&T Solutions 
+        Your job is to write a cold email to the client regarding the job mentioned above describing the capability of {company_name}
         in fulfilling their needs.
-        Also add the most relevant ones from the following links to showcase L&T Solutions's portfolio: {link_list}
-        Remember you are Liam, BDE at L&T Solutions. 
+        Also add the most relevant ones from the following links to showcase {company_name}'s portfolio: {link_list}
+        Remember you are {user_name}, BDE at {company_name}. 
         Do not provide a preamble.
         ### EMAIL (NO PREAMBLE):
 
         """
         )
-          
+        
+        
 
         chain_email = prompt_email | self.llm
-        res = chain_email.invoke({"job_description": str(job), "link_list": links})
+        res = chain_email.invoke({"job_description": str(job), 
+                                  "link_list": links,
+                                  "user_name": self.user_name,
+                                  "company_name": self.company_name})
         return res.content  # return key content of the job posting
 
 if __name__ == "__main__":
