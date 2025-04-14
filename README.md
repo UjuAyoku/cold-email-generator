@@ -12,6 +12,7 @@ Automates personalized cold outreach using job listings and LLMs to boost sales 
   <summary>Table of Contents</summary>
   <ol>
     <li>
+      [Problem Statement](#problem-statement") 
       <a href="#problem-statement">Problem Statement</a>
     </li>
     <li>
@@ -38,7 +39,7 @@ Automates personalized cold outreach using job listings and LLMs to boost sales 
 
 
 <!-- PROBLEM STATEMENT -->
-<a id="problem-statement"></a>
+<a name="problem-statement"></a>
 ## :jigsaw: Problem Statement
 In the highly competitive software services industry, companies such as TCS, Infosys, and LTIMindtree must constantly seek new client projects. One proven technique is cold emailing potential clients who have posted job openings on their careers pages. Sales teams often manually analyze these job listings and craft personalized emails to offer contract-based engineers who match the job requirements.
 
@@ -50,11 +51,11 @@ This process is manual, time-consuming, and often inconsistent.
 
 
 
-<a id="architecture-overview"></a>
+<a name="architecture-overview"></a>
 ## :building_construction: Architecture Overview
 This project leverages cutting-edge AI tools and modern software architecture to automate the cold email generation process from job descriptions:
 
-<a id="core-components"></a>
+<a name="core-components"></a>
 ### :wrench: Core Components
 - **Web Scraper (LangChain):** Extracts job descriptions from target companies' career portals.
 
@@ -65,7 +66,7 @@ This project leverages cutting-edge AI tools and modern software architecture to
 - **Cold Email Generator (LLM + LangChain):** Combines parsed job data and relevant project portfolio links to generate a personalized email pitch.
 
 
-<a id="workflow-summary"></a>
+<a name="workflow-summary"></a>
 ### :bulb: Workflow Summary
 - **Input:** A job listing URL is provided by the user.
 
@@ -79,13 +80,13 @@ This project leverages cutting-edge AI tools and modern software architecture to
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<a id="live-demo"></a>
+<a name="live-demo"></a>
 ## Live Demo
 Try out the app here: https://cold-email-creator.streamlit.app/
 
-<a id="usage"></a>
+<a name="usage"></a>
 ## Usage
-<a id="clone-repository"></a>
+<a name="clone-repository"></a>
 1. Clone the Repository
 ```sh
 git clone https://github.com/UjuAyoku/cold-email-generator.git
@@ -93,7 +94,7 @@ git clone https://github.com/UjuAyoku/cold-email-generator.git
 cd cold-email-generator/app
 ```
 
-<a id="activate-venv"></a>
+<a name="activate-virtual-env"></a>
 2. Create and Activate Virtual Environment (Optional but Recommended)
 ```sh
 python -m venv env
@@ -102,27 +103,27 @@ env\Scripts\activate         # On Windows
 ```
 
 
-<a id="install-dependencies"></a>
+<a name="install-dependencies"></a>
 3. Install Dependencies
 ```sh
 pip install -r requirements.txt
 ```
 
-<a id=".env"></a>
+<a name=".env"></a>
 4. Set Up .env File
 Create a .env file inside the app directory and add your credentials. This is used to authenticate and access Groq’s Llama 3.3 model.
 ```sh
 GROQ_API_KEY=your_groq_api_key
 ```
 
-<a id="job-post-url"></a>
+<a name="job-post-url"></a>
 5. Update the Job Posting URL
 * Open main.py and update the placeholder URL to a valid job posting
 ```sh
 url_input = "https://careers.example.com/job/software-engineer-ai"
 ```
 
-<a id="run-app"></a>
+<a name="run-app"></a>
 6. Run the App
 From inside the app/ folder, launch the Streamlit app:
 ```sh
@@ -132,7 +133,7 @@ The app will open in your browser at http://localhost:8501.
 
 
 
-<a id="notes"></a>
+<a name="notes"></a>
 ### :pushpin: Notes
 - The project relies on your curated project portfolio in app/resource/portfolio.csv. Ensure it's up-to-date.
 
