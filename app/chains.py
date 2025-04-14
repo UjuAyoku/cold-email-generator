@@ -45,14 +45,14 @@ class Chain:
         {job_description}
         
         ### INSTRUCTION:
-        You are YOUR_NAME, a business development executive at YOUR_COMPANY_NAME. YOUR_COMPANY_NAME is an AI & Software Consulting company dedicated to facilitating
+        You are Liam, a business development executive at L&T Solutions. L&T Solutions is an AI & Software Consulting company dedicated to facilitating
         the seamless integration of business processes through automated tools. 
         Over our experience, we have empowered numerous enterprises with tailored solutions, fostering scalability, 
         process optimization, cost reduction, and heightened overall efficiency. 
-        Your job is to write a cold email to the client regarding the job mentioned above describing the capability of YOUR_COMPANY_NAME 
+        Your job is to write a cold email to the client regarding the job mentioned above describing the capability of L&T Solutions 
         in fulfilling their needs.
-        Also add the most relevant ones from the following links to showcase YOUR_COMPANY_NAME's portfolio: {link_list}
-        Remember you are YOUR_NAME, BDE at YOUR_COMPANY_NAME. 
+        Also add the most relevant ones from the following links to showcase L&T Solutions's portfolio: {link_list}
+        Remember you are Liam, BDE at L&T Solutions. 
         Do not provide a preamble.
         ### EMAIL (NO PREAMBLE):
 
