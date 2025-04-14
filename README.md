@@ -5,7 +5,6 @@
 # :rocket: Project: AI-Powered Cold Email Generator for Services Sales 
 Automates personalized cold outreach using job listings and LLMs to boost sales pipeline for software services companies.
 
- 
 
 
 <!-- TABLE OF CONTENTS -->
@@ -22,15 +21,24 @@ Automates personalized cold outreach using job listings and LLMs to boost sales 
         <li><a href="#workflow-summary">Workflow Summary</a></li>
       </ul>
     </li>
+    <li><a href="#live-demo">Live Demo</a></li>
     <li><a href="#usage">Usage</a></li>
+    <ul>
+        <li><a href="#clone-repository">Clone the Repository</a></li>
+        <li><a href="#activate-venv">Create and Activate Virtual Environment (Optional but Recommended)</a></li>
+        <li><a href="#install-dependencies">Install Dependencies</a></li>
+        <li><a href="#.env">Set Up .env File</a></li>
+        <li><a href="#job-post-url">Update the Job Posting URL</a></li>
+        <li><a href="#run-app">Run the App</a></li>
+      </ul>
     <li><a href="#notes">Notes</a></li>
 
   </ol>
 </details>
 
 
-
 <!-- PROBLEM STATEMENT -->
+<a id="problem-statement"></a>
 ## :jigsaw: Problem Statement
 In the highly competitive software services industry, companies such as TCS, Infosys, and LTIMindtree must constantly seek new client projects. One proven technique is cold emailing potential clients who have posted job openings on their careers pages. Sales teams often manually analyze these job listings and craft personalized emails to offer contract-based engineers who match the job requirements.
 
@@ -42,10 +50,11 @@ This process is manual, time-consuming, and often inconsistent.
 
 
 
-
+<a id="architecture-overview"></a>
 ## :building_construction: Architecture Overview
 This project leverages cutting-edge AI tools and modern software architecture to automate the cold email generation process from job descriptions:
 
+<a id="core-components"></a>
 ### :wrench: Core Components
 - **Web Scraper (LangChain):** Extracts job descriptions from target companies' career portals.
 
@@ -55,6 +64,8 @@ This project leverages cutting-edge AI tools and modern software architecture to
 
 - **Cold Email Generator (LLM + LangChain):** Combines parsed job data and relevant project portfolio links to generate a personalized email pitch.
 
+
+<a id="workflow-summary"></a>
 ### :bulb: Workflow Summary
 - **Input:** A job listing URL is provided by the user.
 
@@ -68,44 +79,61 @@ This project leverages cutting-edge AI tools and modern software architecture to
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<a id="live-demo"></a>
 ## Live Demo
 Try out the app here: https://cold-email-creator.streamlit.app/
 
-## How to Use the Cold Email Generator Code
+<a id="usage"></a>
+## Usage
+<a id="clone-repository"></a>
 1. Clone the Repository
-- git clone https://github.com/UjuAyoku/cold-email-generator.git
-- cd cold-email-generator/app
+```sh
+git clone https://github.com/UjuAyoku/cold-email-generator.git
 
+cd cold-email-generator/app
+```
+
+<a id="activate-venv"></a>
 2. Create and Activate Virtual Environment (Optional but Recommended)
-* python -m venv env
-* source env/bin/activate      # On macOS/Linux
-* env\Scripts\activate         # On Windows
+```sh
+python -m venv env
+source env/bin/activate      # On macOS/Linux
+env\Scripts\activate         # On Windows
+```
 
-3. Install Dependencies:
-<pre><code>```python pip install -r requirements.txt```</code></pre>
 
+<a id="install-dependencies"></a>
+3. Install Dependencies
+```sh
+pip install -r requirements.txt
+```
+
+<a id=".env"></a>
 4. Set Up .env File
-Create a .env file inside the app directory and add your credentials:
-* GROQ_API_KEY=your_groq_api_key
-* This is used to authenticate and access Groq’s Llama 3.3 model.
+Create a .env file inside the app directory and add your credentials. This is used to authenticate and access Groq’s Llama 3.3 model.
+```sh
+GROQ_API_KEY=your_groq_api_key
+```
 
+<a id="job-post-url"></a>
 5. Update the Job Posting URL
-* Open main.py and update the placeholder URL to a valid job posting:
+* Open main.py and update the placeholder URL to a valid job posting
+```sh
 url_input = "https://careers.example.com/job/software-engineer-ai"
+```
 
+<a id="run-app"></a>
 6. Run the App
 From inside the app/ folder, launch the Streamlit app:
 ```sh
 python streamlit run main.py
 ```
+The app will open in your browser at http://localhost:8501.
 
-Your app will open in your browser at http://localhost:8501.
 
+
+<a id="notes"></a>
 ### :pushpin: Notes
 - The project relies on your curated project portfolio in app/resource/portfolio.csv. Ensure it's up-to-date.
-
-- Groq’s API is blazing fast for Llama 3.3—perfect for real-time cold email generation.
-
-- You can further extend this by integrating multiple job sources.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
