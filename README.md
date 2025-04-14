@@ -1,11 +1,12 @@
 <a id="readme-top"></a>
 
-
-
-# :rocket: Project: AI-Powered Cold Email Generator for Services Sales 
+## Project: AI-Powered Cold Email Generator for Services Sales 
 Automates personalized cold outreach using job listings and LLMs to boost sales pipeline for software services companies.
 
-
+<a name="live-demo"></a>
+## Live Demo
+Try out the app here: https://cold-email-creator.streamlit.app/
+</br>
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -36,7 +37,6 @@ Automates personalized cold outreach using job listings and LLMs to boost sales 
   </ol>
 </details>
 
-
 <!-- PROBLEM STATEMENT -->
 <a name="problem-statement"></a>
 ## :jigsaw: Problem Statement
@@ -47,8 +47,6 @@ In the highly competitive software services industry, companies constantly seek 
 **This project automates the end-to-end process of crafting high-quality, hyper-relevant cold emails using LLMs**—accelerating outreach efforts, increasing conversions, and creating a scalable solution for business development executives.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <a name="architecture-overview"></a>
 ## :building_construction: Architecture Overview
@@ -64,7 +62,6 @@ This project leverages cutting-edge AI tools and modern software architecture to
 
 - **Cold Email Generator (LLM + LangChain):** Combines parsed job data and relevant project portfolio links to generate a personalized email pitch.
 
-
 <a name="workflow-summary"></a>
 ### :bulb: Workflow Summary
 - **Input:** A job listing URL is provided by the user.
@@ -78,10 +75,6 @@ This project leverages cutting-edge AI tools and modern software architecture to
 - **Output:** A ready-to-send, targeted cold email with supporting portfolio references.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<a name="live-demo"></a>
-## Live Demo
-Try out the app here: https://cold-email-creator.streamlit.app/
 
 <a name="usage"></a>
 ## Usage
@@ -101,7 +94,6 @@ source env/bin/activate      # On macOS/Linux
 env\Scripts\activate         # On Windows
 ```
 
-
 <a name="install-dependencies"></a>
 3. Install Dependencies
 ```sh
@@ -109,28 +101,26 @@ pip install -r requirements.txt
 ```
 
 <a name=".env"></a>
-4. Set Up .env File
+4. Set Up .env File </br>
 Create a .env file inside the app directory and add your credentials. This is used to authenticate and access Groq’s Llama 3.3 model.
 ```sh
 GROQ_API_KEY=your_groq_api_key
 ```
 
 <a name="job-post-url"></a>
-5. Update the Job Posting URL
+5. Update the Job Posting URL </br>
 * Open main.py and update the placeholder URL to a valid job posting
 ```sh
 url_input = "https://careers.example.com/job/software-engineer-ai"
 ```
 
 <a name="run-app"></a>
-6. Run the App
+6. Run the App </br>
 From inside the app/ folder, launch the Streamlit app:
 ```sh
 python streamlit run main.py
 ```
 The app will open in your browser at http://localhost:8501.
-
-
 
 <a name="notes"></a>
 ### :pushpin: Notes
