@@ -12,7 +12,6 @@ Automates personalized cold outreach using job listings and LLMs to boost sales 
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      [Problem Statement](#problem-statement") 
       <a href="#problem-statement">Problem Statement</a>
     </li>
     <li>
@@ -41,9 +40,9 @@ Automates personalized cold outreach using job listings and LLMs to boost sales 
 <!-- PROBLEM STATEMENT -->
 <a name="problem-statement"></a>
 ## :jigsaw: Problem Statement
-In the highly competitive software services industry, companies such as TCS, Infosys, and LTIMindtree must constantly seek new client projects. One proven technique is cold emailing potential clients who have posted job openings on their careers pages. Sales teams often manually analyze these job listings and craft personalized emails to offer contract-based engineers who match the job requirements.
+In the highly competitive software services industry, companies constantly seek new client projects. One proven technique is cold emailing potential clients who have posted job openings on their careers pages. Sales teams often manually analyze these job listings and craft personalized emails to offer contract-based engineers who match the job requirements. 
 
-This process is manual, time-consuming, and often inconsistent.
+**Challenge:** This process is manual, time-consuming, and often inconsistent.
 
 **This project automates the end-to-end process of crafting high-quality, hyper-relevant cold emails using LLMs**—accelerating outreach efforts, increasing conversions, and creating a scalable solution for business development executives.
 
