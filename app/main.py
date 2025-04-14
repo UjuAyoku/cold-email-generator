@@ -12,11 +12,17 @@ from utils import clean_text
 def create_streamlit_app(llm, portfolio, clean_text):
     # st.title("📧 Cold Mail Generator")
     st.title(":e-mail: Email Generator")
+    user_name = st.text_input("Enter a name")
+    company_name = st.text_input("Enter a company name")
     # specify an ACTIVE job posting. Using an expired job link will not work.
     url_input = st.text_input("Enter a URL:", value="https://careers.arcresources.com/job/Calgary-Senior-Data-Scientist-Albe/589984817/")
     submit_button = st.button("Submit")
 
     if submit_button:
+        if not user_name or not company_name:
+            st.warning("Please enter both your name and your company name.")
+            return
+        
         try:
             loader = WebBaseLoader([url_input])
             data = clean_text(loader.load().pop().page_content)
