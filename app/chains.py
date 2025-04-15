@@ -29,16 +29,11 @@ class Chain:
         try:
             json_parser = JsonOutputParser()
             res = json_parser.parse(res.content)
-            # parsed_jobs = json_parser.parse(res.content)
         except OutputParserException:
             raise OutputParserException("Context too big. Unable to parse jobs.")
         return res if isinstance(res, list) else [res]
         
-        # Filter and return only the first valid job
-        # res = parsed_jobs[0] if isinstance(parsed_jobs, list) else parsed_jobs
-        # return res
-
-    def write_mail(self, job, links):
+    def write_mail(self, job, links, user_name, company_name):
         prompt_email = PromptTemplate.from_template(
         """
         ### JOB DESCRIPTION:
@@ -55,17 +50,14 @@ class Chain:
         Remember you are {user_name}, BDE at {company_name}. 
         Do not provide a preamble.
         ### EMAIL (NO PREAMBLE):
-
         """
         )
         
-        
-
         chain_email = prompt_email | self.llm
         res = chain_email.invoke({"job_description": str(job), 
                                   "link_list": links,
-                                  "user_name": self.user_name,
-                                  "company_name": self.company_name})
+                                  "user_name": user_name,
+                                  "company_name": company_name})
         return res.content  # return key content of the job posting
 
 if __name__ == "__main__":

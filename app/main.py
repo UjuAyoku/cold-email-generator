@@ -1,6 +1,6 @@
 import sys
-import pysqlite3
-sys.modules["sqlite3"] = pysqlite3
+import pysqlite3  # required to fix sqlite3 issue for streamlit cloud deployment
+sys.modules["sqlite3"] = pysqlite3 # required to fix sqlite3 issue for streamlit cloud 
 import streamlit as st
 from langchain_community.document_loaders import WebBaseLoader
 
@@ -31,7 +31,7 @@ def create_streamlit_app(llm, portfolio, clean_text):
             for job in jobs:
                 skills = job.get('skills', [])
                 links = portfolio.query_links(skills)
-                email = llm.write_mail(job, links)
+                email = llm.write_mail(job, links, user_name, company_name)
                 st.code(email, language='markdown')
         except Exception as e:
             st.error(f"An Error Occurred: {e}")
