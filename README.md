@@ -1,7 +1,7 @@
 <a id="readme-top"></a>
 
 ## Project: AI-Powered Cold Email Generator for Services Sales 
-Automates personalized cold outreach using job listings and LLMs to boost sales pipeline for software services companies.
+Automates personalized cold outreach using job listings and LLMs to boost sales pipeline for services companies.
 
 <a name="live-demo"></a>
 ## Live Demo
