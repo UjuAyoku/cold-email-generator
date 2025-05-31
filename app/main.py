@@ -15,7 +15,7 @@ def create_streamlit_app(llm, portfolio, clean_text):
     user_name = st.text_input("Enter a name")
     company_name = st.text_input("Enter a company name")
     # specify an ACTIVE job posting. Using an expired job link will not work.
-    url_input = st.text_input("Enter a URL:", value="https://careers/.../")
+    url_input = st.text_input("Enter a URL:", value="https://careers/...")
     submit_button = st.button("Submit")
 
     if submit_button:
