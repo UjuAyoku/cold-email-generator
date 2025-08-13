@@ -115,7 +115,7 @@ source env/bin/activate      # On macOS/Linux
 env\Scripts\activate         # On Windows
 ```
 
-# Install dependencies
+### Install dependencies
 pip install -r requirements.txt
 ```
 
@@ -150,7 +150,7 @@ url_input = "https://careers.example.com/job/software-engineer"
 - Copy or export directly to your email client
 
 <a name="notes"></a>
-### :pushpin: Important Notes
+## :pushpin: Important Notes
 - The project relies on your curated project portfolio in app/resource/portfolio.csv.  Keep your portfolio.csv updated for best matches
 - API may have usage limits 
 
