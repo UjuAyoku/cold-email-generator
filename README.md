@@ -77,15 +77,6 @@ In the highly competitive software services industry, companies constantly seek 
 <a name="workflow-summary"></a>
 ### Workflow Summary
 
-```mermaid
-graph LR
-    A[Job URL] --> B[Scraper]
-    B --> C[LLM Analysis]
-    C --> D{{Skills/Requirements}}
-    D --> E[Vector DB Match]
-    E --> F[Email Generator]
-    F --> G[Output Email]
-
 - **Input:** A job listing URL is provided by the user.
 
 - **Scraping & Extraction:** LangChain scrapes the job page, and Llama 3.1 extracts structured data (skills, role, description) as JSON.
