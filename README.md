@@ -76,6 +76,8 @@ In the highly competitive software services industry, companies constantly seek 
 
 <a name="workflow-summary"></a>
 ### Workflow Summary
+
+```mermaid
 graph LR
     A[Job URL] --> B[Scraper]
     B --> C[LLM Analysis]
@@ -83,6 +85,7 @@ graph LR
     D --> E[Vector DB Match]
     E --> F[Email Generator]
     F --> G[Output Email]
+```
 
 - **Input:** A job listing URL is provided by the user.
 
