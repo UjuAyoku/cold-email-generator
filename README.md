@@ -76,6 +76,15 @@ In the highly competitive software services industry, companies constantly seek 
 
 <a name="workflow-summary"></a>
 ### Workflow Summary
+```sh
+graph LR
+    A[Job URL] --> B[Scraper]
+    B --> C[LLM Analysis]
+    C --> D{{Skills/Requirements}}
+    D --> E[Vector DB Match]
+    E --> F[Email Generator]
+    F --> G[Output Email]
+```
 
 - **Input:** A job listing URL is provided by the user.
 
