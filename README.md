@@ -24,7 +24,7 @@
     <li><a href="#architecture-overview">Architecture Overview</a>
       <ul>
         <li><a href="#core-components">Core Components</a></li>
-        <li><a href="#workflow-summary">Workflow Summary</a></li>
+        <li><a href="#workflow-summary">Workflow</a></li>
       </ul>
     </li>
     <li><a href="#installation">Installation</a></li>
@@ -75,7 +75,7 @@ In the highly competitive software services industry, companies constantly seek 
 
 
 <a name="workflow-summary"></a>
-### Workflow Summary
+### Workflow
 
 ```mermaid
 graph LR
