@@ -57,7 +57,7 @@ This project automates the workflow end-to-end: scrape job descriptions, analyze
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Research Report
-For those interested in the research methodology behind this project, including:
+If you are interested in the research methodology behind this project, including:
 - Problem framing
 - Experimental setup
 - Evaluation metrics
