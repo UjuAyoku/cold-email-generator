@@ -1,7 +1,7 @@
 <a id="readme-top"></a>
 
 <div align="center">
-  <h1>AI-Powered Cold Email Generator</h1>
+  <h1>Context-Aware Cold Email Generation with LLMs</h1>
   <h3>Automate personalized outreach using AI to boost your services sales pipeline</h3>
   
   [![Live Demo](https://img.shields.io/badge/Try-Live_Demo-green)](https://cold-email-creator.streamlit.app/)
