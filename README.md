@@ -42,23 +42,29 @@
 <!-- PROBLEM STATEMENT -->
 <a name="problem-statement"></a>
 ## Problem Statement
-In the highly competitive software services industry, companies constantly seek new client projects. One proven technique is cold emailing potential clients who have posted job openings on their careers pages. Sales teams often manually analyze these job listings and craft personalized emails to offer contract-based engineers who match the job requirements. 
-
-**Current Challenges:** 
-- Manual process is time-consuming
-- Inconsistent email quality
-- Difficult to scale outreach efforts
-- Portfolio matching is subhective
+Sales teams spend hours manually analyzing job listings and writing cold emails to potential clients. This manual process is:
+- Time-consuming
+- Inconsistent in quality
+- Difficult to scale  
+- Dependent on subjective portfolio matching
+As a result, opportunities are missed and outreach efforts don’t scale effectively.
 
 **Solution:**
-- Automates the entire workflow
-- Generates hyper-relevant emails in seconds
-- Includes data-driven portfolio matches
-- Maintains consistent quality
+This project automates the workflow end-to-end: scrape job descriptions, analyze requirements with an LLM, match relevant portfolio projects, and generate personalized cold emails in seconds.
 
 **This project automates end-to-end cold email generation** - from job posting analysis to personalized outreach - helping business development teams scale their pipeline efficiently.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Research Report
+For those interested in the research methodology behind this project, including:
+- Problem framing
+- Experimental setup
+- Evaluation metrics
+- Results & limitations
+- Future work
+
+[View Research Writeup](https://github.com/UjuAyoku/cold-email-generator/blob/main/research-report.md)
 
 <a name="architecture-overview"></a>
 ## Architecture Overview
